@@ -8,7 +8,7 @@
 /* Cor de fundo e fonte padrão */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
+    background-color: #a8c030;
     color: #333;
     padding: 0;
     margin: 0;
@@ -16,63 +16,109 @@ body {
 
 /* Estilo do header com navegação */
 header {
-    background: #004d88;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header nav ul {
-    list-style: none;
+    background-color: #184848;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-header nav ul li {
-    display: inline-block;
-}
+  .logo img {
+    width: 250px;
+    height: auto;
+  }
 
-header nav ul li a {
+  nav {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav a {
+    position: relative;
     text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
 
-header nav ul li a:hover {
-    background: #ff7f00;
-}
+  nav a:hover {
+    color: #00aaff;
+  }
 
-/* Estilo de introdução */
-.intro h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
+  nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #00aaff;
+    transition: width 0.3s ease;
+  }
 
-.intro .subtitulo {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
+  nav a:hover::after {
+    width: 100%;
+  }
 
 /* Seções */
 .conteudo {
     display: none;
     padding: 40px;
-    background: #fff;
+    background: #f0f0d8;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 /* Sobre mim */
-#sobre {
+#inicio {
     display: block;
+}
+
+/* Centralizar a seção na página */
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; /* Preenche a altura da tela */
+    padding: 20px;
+}
+
+/* Estilo da imagem circular */
+.foto_inicio {
+    width: 400px;  /* Tamanho da imagem */
+    height: 400px;
+    border-radius: 50%;  /* Torna a imagem circular */
+    object-fit: cover;  /* Faz com que a imagem preencha a área circular */
+    margin-right: 100px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Estilo do container das informações */
+.info_inicio {
+    display: flex;
+    flex-direction: column;  /* Coloca o título e o texto um embaixo do outro */
+    justify-content: center;
+    align-items: flex-start;  /* Alinha o conteúdo à esquerda */
+    max-width: 600px;  /* Define um limite de largura para o texto */
+    text-align: left;
+}
+
+/* Estilo do título */
+.info strong {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Estilo do parágrafo */
+.info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 600px;  /* Limita a largura do texto */
 }
 
 .cartao {
@@ -87,8 +133,8 @@ header nav ul li a:hover {
 }
 
 .cartao .foto {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     border-radius: 8px;
     margin-right: 30px;
 }
@@ -119,7 +165,7 @@ header nav ul li a:hover {
 .social-icon {
     font-size: 1.5rem;
     margin-right: 15px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     transition: transform 0.3s;
 }
@@ -161,19 +207,10 @@ header nav ul li a:hover {
     color: #ff7f00;
 }
 
-/* Habilidades */
-ul {
-    list-style-type: none;
-    font-size: 1.1rem;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
 
 /* Rodapé fixo */
 footer {
-    background: #004d88;
+    background: #184848;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -185,14 +222,4 @@ footer {
 
 footer .contato p {
     margin: 5px 0;
-}
-
-/* Animações e transições */
-.aba {
-    transition: background-color 0.3s ease;
-}
-
-.aba.active {
-    background-color: #ff7f00;
-    color: #fff;
 }
