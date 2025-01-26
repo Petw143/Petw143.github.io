@@ -65,11 +65,12 @@ header {
 /* Seções */
 .conteudo {
     display: none;
-    padding: 40px;
+    padding: 20px;
     background: #f0f0d8;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
+    height: 75vh; /* Preenche a altura da tela */
 }
 
 /* Sobre mim */
@@ -123,13 +124,13 @@ header {
 
 .cartao {
     display: flex;
-    background: linear-gradient(145deg, #ff7f00, #ff4500);
+    background: linear-gradient(145deg, #006060, #006060);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 60%;
 }
 
 .cartao .foto {
