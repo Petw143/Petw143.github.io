@@ -1,0 +1,198 @@
+/* Resetando os estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo e fonte padrão */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo do header com navegação */
+header {
+    background: #004d88;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #ff7f00;
+}
+
+/* Estilo de introdução */
+.intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.intro .subtitulo {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Seções */
+.conteudo {
+    display: none;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Sobre mim */
+#sobre {
+    display: block;
+}
+
+.cartao {
+    display: flex;
+    background: linear-gradient(145deg, #ff7f00, #ff4500);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cartao .foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.cartao .info {
+    flex: 1;
+    color: #fff;
+}
+
+.cartao .info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.cartao .info-item {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.cartao .info-item strong {
+    color: #ffed00;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.social-icon i {
+    color: #ffed00;
+}
+
+/* Cartões de experiência e educação */
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card strong {
+    color: #ff7f00;
+}
+
+/* Habilidades */
+ul {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Rodapé fixo */
+footer {
+    background: #004d88;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer .contato p {
+    margin: 5px 0;
+}
+
+/* Animações e transições */
+.aba {
+    transition: background-color 0.3s ease;
+}
+
+.aba.active {
+    background-color: #ff7f00;
+    color: #fff;
+}
